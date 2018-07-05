@@ -7,11 +7,30 @@
 
 - 选用DD-Wrt原因，版本更新非常勤快，多少年只遇过2、3个地雷版本，实际运行非常稳定，没有掉线过；不喜欢折腾。
 
+— 缺点：1.YouTube、等App中的广告还是会出现。2.路由器开机或者从新启动，因为要从新下载并且配置规则，会有2、3分钟无法上网，并且路由器CPU短暂飙升至100%。
+
+- 如不想折腾。 DNS：可以设置成 「AdGuard DNS」
+```
+默认：使用以下服务器拦截广告，跟踪和钓鱼
+176.103.130.130
+176.103.130.131
+IPv6 地址使用
+2a00:5a60::ad1:0ff
+2a00:5a60::ad2:0ff
+
+家庭保护：默认 + 拦截成人网站 + 安全搜索
+176.103.130.132
+176.103.130.134
+IPv6 地址使用
+2a00:5a60::bad1:0ff
+2a00:5a60::bad2:0ff
+```
+
 ## 准备App
 
-- 文本编辑器 CotEditor
+- 文本编辑器 「CotEditor」
 
-- SSH访问 Cyberduck
+- SSH访问 「Cyberduck」
 
 ## 准备好一台支援DD-Wrt的路由器
 > 下载列表中就可以查看支援哪台设备
@@ -49,6 +68,14 @@ https://easylist-downloads.adblockplus.org/malwaredomains_full.txt "
 - 输入 路由器地址 `192.168.xxx.xxx`
 - 用户名 `root`
 - 密码 
+
+## 激活「privoxy-blocklist.sh」
+> 進入DD-Wrt管理界面 `管理` =》`命令` =〉`指令`中输入
+
+```
+sh privoxy-blocklist.sh
+```
+> `运行命令`
 
 ## 实际 设置 
 
