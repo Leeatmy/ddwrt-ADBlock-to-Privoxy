@@ -45,13 +45,10 @@ https://easylist-downloads.adblockplus.org/malwaredomains_full.txt "
 ```
 
 ## 用Cyberduck上传`privoxy-blocklist.sh` 到 路由器的`/jffs/`中
-> 选 `SFTP SSH文件协议`
-
-> 输入 路由器地址 `192.168.xxx.xxx`
-
-> 用户名 `root`
-
-> 密码 
+- 选 `SFTP SSH文件协议`
+- 输入 路由器地址 `192.168.xxx.xxx`
+- 用户名 `root`
+- 密码 
 
 ## 实际 设置 
 
